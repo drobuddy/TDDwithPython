@@ -1,0 +1,6 @@
+.git/*
+superlists/__pycache__/*
+
+db.sqlite3
+functional_tests.py
+*.pyc
