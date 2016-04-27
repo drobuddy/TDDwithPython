@@ -17,12 +17,11 @@ class NewVisitorTest(unittest.TestCase):
 
         # Edith has heard about a cool new online web app. She goes
         # to check out it's webpage.
-        self.browser = webdriver.Firefox()
         self.browser.get('http://localhost:8000')
 
         # She notices the page title and header mention to-do lists
         self.assertIn('To-Do', self.browser.title)
-        self.fail('Finish the test!')
+        #self.fail('Finish the test!')
 
         # She is invited to enter a to-do item straight away
 
@@ -44,6 +43,6 @@ class NewVisitorTest(unittest.TestCase):
         # She visits the URL - her to-do list is still there.
 
         # Satisfied, she goes back to sleep.
-        self.browser.quit()
+        self.tearDown
 
 if __name__ == '__main__': unittest.main(warnings='ignore')
