@@ -6,6 +6,5 @@ class TestingHelpers():
     
     def pp(object):
         pp = pprint.PrettyPrinter(indent="4")
-        pp.pprint(object)
-        return False
+        return pp.pprint(object)
 
