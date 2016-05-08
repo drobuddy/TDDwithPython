@@ -2,9 +2,9 @@
 
 import pprint
 
-class TestingHelpers():
+class Tools():
     
-    def pp(object):
+    def pp(someObject):
         pp = pprint.PrettyPrinter(indent="4")
-        return pp.pprint(object)
+        return pp.pprint(someObject)
 

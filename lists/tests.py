@@ -3,6 +3,15 @@ from django.test import TestCase
 from django.http import HttpRequest
 from lists.views import home_page
 
+# Use Tools.pp to nicely format data
+# that we need returned to the console 
+# for testing and diagnostics
+
+from TestingHelpers import Tools
+# Example usage:
+# Tools.pp(response.content)
+
+
 # Create your tests here.
 
 class HomePageTest (TestCase):
