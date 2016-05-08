@@ -9,7 +9,7 @@ class HomePageTest (TestCase):
 
     def test_root_url_resolves_to_home_page_view(self):
         found = resolve('/')
-        self.assertEqual(found.func, home_page)     # Resolve was able to map a function to the home_page view
+        self.assertEqual(found.func, home_page)     # The "found" response contains a function called home_page
         
     def test_home_page_returns_correct_HTML_view(self):
         request = HttpRequest()
